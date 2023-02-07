@@ -1,0 +1,164 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    background-color: #e3d8bf;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+.row{
+    max-width: 90px;
+    height: auto;
+    margin: 0;
+    display: flex;
+
+}
+
+#column1{
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+#column7{
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.columns{
+    transition: 0.25s;
+    background-color: #e3d8bf;
+}
+
+.columns:hover{
+    background-color: #FDF0D5;
+    transition: 0.25s;
+    transform: scale(103%);
+    z-index: 1;
+    border-radius: .5rem;
+    box-shadow: 0rem 0rem 4rem #151515;
+}
+
+.cell:hover{
+    cursor: pointer;
+}
+
+#gameBoard{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.sides{
+    font-weight: 800;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    font-size: 1.05rem;
+    z-index: 2;
+}
+
+#titleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#title{
+    font-family: 'Nunito', sans-serif;
+    color: #151515;
+    font-size: 3.5rem;
+    user-select: none;
+    margin: 1rem 0rem;
+    padding: 0rem;
+    font-weight: 1000;
+}
+
+#gameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#mainGame{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sideTitles{
+    text-align: center;
+    color: #FDF0D5;
+    user-select: none;
+    margin: 0rem;
+    padding: 1rem;
+}
+
+#redSide{
+    border: 1rem solid #780000;
+    background-color: #780000;
+}
+#redSideTitle{
+    display: flex;
+    justify-content: center;
+    background-color: #780000;
+}
+
+#yellowSide{
+    border: 1rem solid #003049;
+    background-color: #151515;
+}
+#yellowSideTitle{
+    display: flex;
+    justify-content: center;
+    background-color: #003049;
+}
+
+.reserveTile{
+    max-width: 80%;
+}
+
+.reserveColumns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.reserveColumnContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+#sideBoxes{
+    display: flex;
+    flex-direction: row;
+}
+
+#columnContainers{
+    display: flex;
+    flex-direction: row;
+    border: 1rem solid #151515;
+    border-radius: 2.5rem;
+    width: fit-content;
+}
+
+#statusBar{
+    border: 1rem solid #780000;
+    background-color: #bb2226;
+    width: 50%;
+    margin: 1.5rem 0rem;
+    border-radius: 1.5rem;
+    color:#e3d8bf;
+}
+
+.status{
+    margin: 0.5rem;
+    text-align: center;
+}

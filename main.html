@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Connect Four</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="titleContainer">
+        <h1 id="title">Connect Four</h1>
+    </div>
+    <div id="gameBoard">
+        <div id="columnContainers">
+            <div class="columns" id="column1">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell11" onclick="changeTile(1)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell12" onclick="changeTile(1)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell13" onclick="changeTile(1)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell14" onclick="changeTile(1)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell15" onclick="changeTile(1)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell16" onclick="changeTile(1)">
+            </div>
+            <div class="columns" id="column2">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell21" onclick="changeTile(2)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell22" onclick="changeTile(2)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell23" onclick="changeTile(2)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell24" onclick="changeTile(2)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell25" onclick="changeTile(2)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell26" onclick="changeTile(2)">
+            </div>
+            <div class="columns" id="column3">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell31" onclick="changeTile(3)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell32" onclick="changeTile(3)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell33" onclick="changeTile(3)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell34" onclick="changeTile(3)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell35" onclick="changeTile(3)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell36" onclick="changeTile(3)">
+            </div>
+            <div class="columns" id="column4">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell41" onclick="changeTile(4)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell42" onclick="changeTile(4)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell43" onclick="changeTile(4)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell44" onclick="changeTile(4)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell45" onclick="changeTile(4)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell46" onclick="changeTile(4)">
+            </div>
+            <div class="columns" id="column5">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell51" onclick="changeTile(5)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell52" onclick="changeTile(5)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell53" onclick="changeTile(5)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell54" onclick="changeTile(5)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell55" onclick="changeTile(5)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell56" onclick="changeTile(5)">
+            </div>
+            <div class="columns" id="column6">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell61" onclick="changeTile(6)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell62" onclick="changeTile(6)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell63" onclick="changeTile(6)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell64" onclick="changeTile(6)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell65" onclick="changeTile(6)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell66" onclick="changeTile(6)">
+            </div>   
+            <div class="columns" id="column7">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell71" onclick="changeTile(7)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell72" onclick="changeTile(7)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell73" onclick="changeTile(7)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell74" onclick="changeTile(7)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell75" onclick="changeTile(7)">
+                <img src="Assets/Board_TIle.png" class="row cell" id="cell76" onclick="changeTile(7)">
+            </div> 
+        </div>        
+    </div>
+    <div id="statusBar">
+        <h1 class="status" id="statusTitle">Red's Turn</h1>
+    </div>
+</body>
+</html>
